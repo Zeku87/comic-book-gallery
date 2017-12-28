@@ -28,13 +28,17 @@
 
            <h4>Description</h4>
            <div>@Html.Raw(description)</div>
-
+        @if(artists.Length > 0)
+        {
            <h4>Artists</h4>
-           @{ foreach (var artist in artists)
+           <ul>
+               @foreach (var artist in artists)
                {
-                <div>@artist</div>
+                    <li>@artist</li>
                }
-           }
+           </ul>
+           
+        }
     </div>
 </body>
 </html>
