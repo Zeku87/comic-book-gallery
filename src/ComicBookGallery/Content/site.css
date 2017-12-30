@@ -16,12 +16,21 @@ textarea {
     max-width: 280px;
 }
 
+/*Navbar-inverse and navbar brand*/
+.navbar-inverse{
+    background-color:black;
+}
+
+.navbar-brand{
+    font-size:1.5em;
+}
+
 /* Backbar Styles */
-.backbar{
-  width: 100%;
-  background-color: #555;
-  margin-top: -10px;
-  height: 45px;
+.backbar {
+    width: 100%;
+    background-color: #555;
+    margin-top: -10px;
+    height: 45px;
 }
   .backbar .btn{
     margin-top: 4px;
