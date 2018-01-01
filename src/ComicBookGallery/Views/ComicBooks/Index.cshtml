@@ -9,7 +9,7 @@
         foreach (var comicBook in Model)
         {
             <div class="col-md-3">
-                <h5><b>@comicBook.DisplayText</b></h5>
+                <h5><b>@Html.ActionLink(comicBook.DisplayText,"Details", new { id = comicBook.Id })</b></h5>
                 <img src="/Images/@comicBook.CoverImageFileName"
                      alt="@comicBook.DisplayText"
                      class="img-responsive" />
